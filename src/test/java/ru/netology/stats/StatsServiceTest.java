@@ -5,9 +5,8 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 
-
 public class StatsServiceTest {
-    long[] sales = {8,15,13,15,17,20,19,20,7,14,14,18};
+    long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
     @Test
     public void SumSalesTest() {
@@ -16,6 +15,7 @@ public class StatsServiceTest {
         long expected = 180;
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void MiddleSaleTest() {
         StatsService service = new StatsService();
@@ -23,6 +23,7 @@ public class StatsServiceTest {
         long expected = 15;
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void MinSaleTest() {
         StatsService service = new StatsService();
@@ -38,6 +39,7 @@ public class StatsServiceTest {
         int expected = 8;
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void UnderMiddleSalesTest() {
         StatsService service = new StatsService();
